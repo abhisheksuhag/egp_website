@@ -1,5 +1,7 @@
 import  { useRef, useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
+
  
 const Marc = () => {
     const textSections = [
@@ -8,7 +10,7 @@ const Marc = () => {
             heading: "Manufacturing",
             subheading: "Resource management and circular economy",
             paragraph: "Rapid urbanisation in Southeast Asia means increased waste that needs to be managed. While this is clearly a challenge given that the regions population Rapid urbanisation in Southeast Asia means increased waste that needs to be managed. While this is clearly a challenge given that the regionpopulation is exis expected to rise from about 686.825 million to 724.664 million...",
-            diffsection: "Learn More"
+            diffsection: <NavLink to="/market-manufacturing">Learn More</NavLink>
         },
         {
             id: 2,
@@ -22,21 +24,21 @@ const Marc = () => {
             heading: "Retail & Hospitality",
             subheading: "Modern solutions",
             paragraph: "Innovation in waste management includes new technologies and practices that aim to reduce waste and increase efficiency in waste handling and recycling processes.Rapid urbanisation in Southeast Asia means increased waste that needs to be managed. While this is clearly a challenge given that the regionpopulation is ex",
-            diffsection: "Learn More"
+            diffsection: "Learn More "
         },
         {
             id: 4,
             heading: "Infrastructure & Real Estate",
             subheading: "Sustainable practices",
             paragraph: "Sustainable waste management practices are essential to protect the environment and human health. They help reduce pollution, conserve resources, and reduce greenhouse gas emissions.Rapid urbanisation in Southeast Asia means increased waste that needs to be managed. While this is clearly a challenge given that the regionpopulation is ex",
-            diffsection: "Learn More"
+            diffsection: <NavLink to="/market-real-estate">Learn More</NavLink>
         },
         {
             id: 5,
             heading: "Financial Institution & Funds",
             subheading: "Sustainable practices",
             paragraph: "Sustainable waste management practices are essential to protect the environment and human health. They help reduce pollution, conserve resources, and reduce greenhouse gas emissions.Rapid urbanisation in Southeast Asia means increased waste that needs to be managed. While this is clearly a challenge given that the regionpopulation is ex",
-            diffsection: "Learn More"
+            diffsection: <NavLink to="/market-finance">Learn More</NavLink>
         },
         {
             id: 6,

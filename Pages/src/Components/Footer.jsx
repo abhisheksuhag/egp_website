@@ -121,9 +121,9 @@ const Footer = () => {
       </div>
 
       <div className="text-center bg-black text-gray-300 text-xs mt-6 md:mt-10">
-      Copyright © 2021 | Powered by ESG Global Partners Private Limited
+      Copyright © 2024 | Powered by ESG Global Partners Private Limited
         <br />
-        esggp.org
+        Esggp.org
       </div>
     </footer>
   );
