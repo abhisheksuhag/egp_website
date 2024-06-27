@@ -70,6 +70,7 @@ import Footer from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
 import Loader from './Components/Loader'; 
 import './App.css';
+import ChatBot from './Components/Chatbot';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -94,6 +95,7 @@ function App() {
       ) : (
         <>
           <Header />
+          <ChatBot />
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />

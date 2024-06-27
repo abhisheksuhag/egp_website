@@ -56,7 +56,7 @@ const ContactPage = () => {
     };
  
     return (
-        <div className="min-h-screen flex items-center justify-center p-10 sm:p-10 md:p-16 lg:p-24 xl:p-32"
+        <div className="min-h-screen flex items-center   justify-center p-10 sm:p-10 md:p-16 lg:p-24 xl:p-32"
             style={{
                 backgroundImage: `url('aboutUs.png')`,
                 backgroundSize: 'cover',
