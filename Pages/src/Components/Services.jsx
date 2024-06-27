@@ -1,7 +1,7 @@
-
+// responsive services section
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-
+ 
 const services = [
   {
     id: 1,
@@ -36,43 +36,43 @@ const services = [
     link: "/services-social",
   },
 ];
-
+ 
 const Services = () => {
   const [hoveredService, setHoveredService] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
-
+ 
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 768);
     };
-
+ 
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+ 
   useEffect(() => {
     if (isSmallScreen && !isHovered) {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
       }, 4000);
-
+ 
       return () => clearInterval(interval);
     }
   }, [isSmallScreen, isHovered]);
-
+ 
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
-
+ 
   return (
-    <div className="relative flex w-full h-screen">
+    <div className="relative flex w-full h-screen overflow-hidden">
       <div className="absolute top-16 left-10 z-20 text-white text-6xl">
         Our Services
       </div>
-
+ 
       {isSmallScreen ? (
         <div className="relative flex w-full h-full overflow-hidden flex-nowrap">
           <div
@@ -87,8 +87,12 @@ const Services = () => {
             <div
               key={service.id}
               className={`relative flex-shrink-0 ${
-                currentIndex === index ? "w-4/5" : "w-1/5"
-              } transition-width duration-700`}
+                index === currentIndex
+                  ? "w-4/5"
+                  : index === (currentIndex + 1) % services.length
+                  ? "w-1/5"
+                  : "w-0"
+              } transition-width duration-700 overflow-hidden`}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
@@ -99,20 +103,22 @@ const Services = () => {
                       currentIndex === index
                         ? "mb-2 translate-y-[-50px]"
                         : "mb-0 translate-y-[10px]"
-                    }`}
+                    } ${currentIndex !== index && "hidden"}`}
                   >
                     {service.heading}
                   </h2>
                   <p
                     className={`absolute w-64 text-lg sm:text-base transition-opacity duration-700 ease-in-out ${
                       currentIndex === index ? "opacity-100" : "opacity-0"
-                    }`}
+                    } ${currentIndex !== index && "hidden"}`}
                   >
                     {service.subheading}
                   </p>
                   <NavLink
                     to={service.link}
-                    className="py-2 px-4 rounded mt-4 transition duration-500 ease-in-out relative overflow-hidden text-white bg-transparent border-none flex items-center"
+                    className={`py-2 px-4 rounded mt-4 transition duration-500 ease-in-out relative overflow-hidden text-white bg-transparent border-none flex items-center ${
+                      currentIndex !== index && "hidden"
+                    }`}
                   >
                     <span
                       className={`mt-5 relative transition-all duration-1000 ease-in-out ${
@@ -148,7 +154,7 @@ const Services = () => {
               backgroundPosition: "center",
             }}
           ></div>
-
+ 
           {services.map((service, index) => (
             <div
               key={service.id}
@@ -206,5 +212,6 @@ const Services = () => {
     </div>
   );
 };
-
+ 
 export default Services;
+ 
