@@ -200,9 +200,8 @@ const HeroMain = () => {
       <img
         src="/circle.png"
         alt="Circle Image"
-        className={`absolute top-0 left-0 w-[1000px] h-[1000px] object-cover z-20 transform translate-x-[-400px] translate-y-[-270px] ${
-          spinAnimation ? "animate-spin-once" : ""
-        }`}
+        className={`absolute top-0 left-0 w-[1000px] h-[1000px] object-cover z-20 transform translate-x-[-400px] translate-y-[-270px] ${spinAnimation ? "animate-spin-once" : ""
+          }`}
       />
     </div>
   );
