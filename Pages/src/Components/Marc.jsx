@@ -1,8 +1,8 @@
-import { useRef, useEffect, useState } from 'react';
+import  { useRef, useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
-
+ 
 const Marc = () => {
     const textSections = [
         {
