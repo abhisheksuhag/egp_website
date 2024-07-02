@@ -1,8 +1,8 @@
-import  { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
- 
+
 const Marc = () => {
     const textSections = [
         {
@@ -48,7 +48,7 @@ const Marc = () => {
             diffsection: "Learn More"
         }
     ];
- 
+
     const imageSections = [
         {
             src: "Manufacturing.jpg",
@@ -67,7 +67,7 @@ const Marc = () => {
             alt: "Building 4"
         },
         {
-            src: "funds.jpg",
+            src: "market_finance.jpeg",
             alt: "Building 5"
         },
         {
@@ -75,15 +75,15 @@ const Marc = () => {
             alt: "Building 6"
         }
     ];
- 
+
     const textScrollRef = useRef(null);
     const imageScrollRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
- 
+
     const scrollCarousel = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % textSections.length);
     };
- 
+
     const handleManualScroll = (direction) => {
         if (direction === 'left') {
             setCurrentIndex((prevIndex) => (prevIndex - 1 + textSections.length) % textSections.length);
@@ -91,23 +91,23 @@ const Marc = () => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % textSections.length);
         }
     };
- 
+
     useEffect(() => {
         const interval = setInterval(scrollCarousel, 6000);
         return () => clearInterval(interval);
     }, []);
- 
+
     return (
         <div className="h-screen relative flex flex-col lg:flex-row">
             {/* Main Heading shifted to the left */}
             <h1 className="text-4xl font-bold text-gray-800 p-4 lg:absolute lg:top-10 lg:left-3 lg:ml-10 z-20">
                 Market
             </h1>
- 
+
             {/* Text Carousel */}
             <div className="text-background-container w-full lg:w-[42%] lg:ml-10 h-screen bg-gray-300 z-10 overflow-hidden" ref={textScrollRef}>
                 <div className="relative w-full h-full flex transition-transform duration-1000 ease-in-out"
-                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {textSections.map((section) => (
                         <div key={section.id} className="w-full h-full flex-shrink-0">
                             <div className="p-8 bg-transparent z-10 flex-shrink-0">
@@ -124,12 +124,12 @@ const Marc = () => {
                     ))}
                 </div>
             </div>
- 
+
             {/* Image Carousel */}
             <div className="image-container w-full lg:w-[54%] h-64 lg:h-[70vh] lg:absolute lg:top-[15%] lg:right-[100px] bg-white z-20 overflow-hidden" ref={imageScrollRef}>
                 {/* Shifted Image Carousel Upward by modifying the lg:top property */}
                 <div className="relative w-full h-full flex transition-transform duration-1000 ease-in-out"
-                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {imageSections.map((image, index) => (
                         <div key={index} className="w-full h-full flex-shrink-0">
                             <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
@@ -137,21 +137,20 @@ const Marc = () => {
                     ))}
                 </div>
             </div>
- 
+
             {/* Navigation Buttons */}
             <div className="absolute bottom-16 right-4 lg:right-[30%] flex space-x-4 z-30">
                 <button onClick={() => handleManualScroll('left')}
-                        className="bg-gray-300 text-black p-3 rounded-full shadow-lg hover:bg-gray-400 transition-colors duration-300">
+                    className="bg-gray-300 text-black p-3 rounded-full shadow-lg hover:bg-gray-400 transition-colors duration-300">
                     <ChevronLeft size={24} />
                 </button>
                 <button onClick={() => handleManualScroll('right')}
-                        className="bg-gray-300 text-black p-3 rounded-full shadow-lg hover:bg-gray-400 transition-colors duration-300">
+                    className="bg-gray-300 text-black p-3 rounded-full shadow-lg hover:bg-gray-400 transition-colors duration-300">
                     <ChevronRight size={24} />
                 </button>
             </div>
         </div>
     );
 };
- 
+
 export default Marc;
- 
