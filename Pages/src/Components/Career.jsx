@@ -24,11 +24,7 @@ const jobsData = [
     title: "Associate- Human Resource",
     more: "Learn More"
   },
-  {
-    location: "New Delhi",
-    title: "Tech Consultant",
-    more: "Learn More"
-  }
+  
 ];
 
 // Job Details Data
@@ -64,8 +60,101 @@ const jobDetailsData = [
       "Positive and enthusiastic attitude, motivated to deliver outstanding client service and grow the business."
     ],
     apply: "Submit your updated CVs to hr@esggp.org."
+  },
+  {
+    title: "Associate- Social",
+    positions: "01",
+    location: "Delhi NCR, India",
+    about: `ESG Global Partners is hiring a Social Associate/ Social Consultant to join our team in India. The successful candidate will work on a variety of technical projects and programs for Clients in diverse sectors, both within the country and internationally. This role will provide a platform to the candidate to engage with international consultants in sharing and developing best practices across the industry while gaining ongoing learning opportunities. This is an excellent career opportunity to work with a consulting firm in supporting diverse set of Clients with challenging business needs.`,
+    duties: [
+      "Undertake socio-economic reviews, community engagement, CSR strategies development and implementation programs.",
+      "Assist senior members of team in report writing and data analytics.",
+      "Manage client’s grievances management systems and stakeholder engagement exercises.",
+      "Perform fieldwork such as sampling, inspections, audits, compilation of field data, conduct interviews with site representatives and stakeholders.",
+      "Able to write reports based on field visits and assessments under the guidance of senior team members.",
+      "Collect, organize, review and analyze documents and datasets.",
+      "Contribute towards drafting of working papers on social issues, policy, sustainable development, etc.",
+      "Support project teams with other tasks and management aspects as defined by the team",
+      "Promote a culture of safety, collaboration and excellence."
+    ],
+    required: [
+      "Bachelor’s/Master’s Degree in Social Sciences, humanities or related discipline;",
+      "0-5 years of professional experience in development projects.",
+      "Experience in conducting surveys, communities engagement, managing stakeholders & their grievances.",
+      "Fluency in English and Nepali is must."
+    ],
+    preferred: [
+      "Demonstrated ability to manage multiple assignments while maintaining clear communication with clients and colleagues.",
+      "Ability to multi-task, maintain flexibility, travel and work independently with minimal supervision.",
+      "Ability to read, understand and apply guidance documents.",
+      "Strong analytical and computational skills to solve technical problems and implement effective solutions.",
+      "Excellent written and verbal communication skills including technical writing experience.",
+      "Strong self-management skills including time management and organisation.",
+      "Strong MS Office computer skills with an advanced understanding of PowerPoint and Excel required.",
+      "Ability to thrive in a fast paced consulting environment, handling multiple project assignments, meeting strict deadlines and travelling to Client’s Office as needed.",
+      "Apply a collaborative approach and enjoy teaming with colleagues in different geographies.",
+      "Positive and enthusiastic attitude, motivated to deliver outstanding client service and grow the business."
+    ],
+    apply: "Submit your updated CVs to hr@esggp.org."
+  },
+  {
+    title: "Manager- Accounts & Ops",
+    positions: "01",
+    location: "Delhi NCR, India",
+    about: `ESG Global Partners is hiring a Manager for Accounts & Operations to join our team in Delhi NCR, India. The successful candidate will be responsible for cash management, record-keeping, and procurement. This role involves managing vendor payments, supporting the operations team, ensuring GST compliance, invoicing, and salary disbursement.`,
+    duties: [
+      "Responsible for Cash Management, Records and Procurement.",
+      "Understanding team requirements based on day to day activities obtaining approval of daily budgets, Weekly and Monthly budgets and providing budget and funds of approved tasks.",
+      "Vendor payments arrangement and ECS processing.",
+      "Support operations team in the delivery of daily tasks.",
+      "Books management ensuring costs and expenses are well recorded.",
+      "GST compliance management, ensuring the returns are filed on time and GST inputs are recorded.",
+      "Invoicing- ensure project invoices are raised as per the project milestone and track payment accordingly.",
+      "Monthly reconciliation of cost and expenses, profit and loss, recording data in Tally ERP and submit the same to company appointed CA.",
+      "Salaries and wages record management with HR executive insuring timely compliance are maintained and salaries disbursed.",
+      "Ensuring end to end finance management support to the team."
+    ],
+    required: [
+      "5 to 10 years in similar role.",
+      "Experience in end-to-end operations management through finance and related tools.",
+      "Good understanding of English writing and spoken.",
+      "Experience in email communication, MS word and excel.",
+      "Experience in P&L estimation, inventory audits, records management filing & archiving.",
+      "GST filing and regulatory compliance.",
+      "Accounting through Microsoft excel is a plus.",
+      "Experience in use & records of Tally ERP."
+    ],
+    preferred: [],
+    apply: "Submit your updated CVs to hr@esggp.org."
+  },
+  {
+    title: "Associate- Human Resource",
+    positions: "01",
+    location: "Delhi NCR, India",
+    about: `ESG Global Partners is hiring a Human Resource Associate to join our team in Delhi NCR, India. The successful candidate will manage day-to-day HR functions, develop HR policies, support management in hiring, assess employee training needs, implement grievance redressal mechanisms, and track employee progress.`,
+    duties: [
+      "To be well versed and take care of HR related day to day functions of the Organisation.",
+      "Understanding and experience in developing HR policies and procedures and its implementation.",
+      "Support Management team in hiring of personnel through effective sourcing, screening and interviewing techniques.",
+      "Assess employees training needs and develop/coordinate learning materials from sources for employees of the organisation.",
+      "Implement Grievance Redressal Mechanism and tracking of concerns/issues and its support in its satisfactory redressal.",
+      "Support in tasks pertaining to employee mapping, employee functions and tracking employee upgradation/promotions."
+    ],
+    required: [
+      "Proven 3 to 5 years of work experience in similar role as HR executive or HR Manager.",
+      "Graduate in HR Management and related field.",
+      "Good command (reading, writing and speaking) command of Nepali language.",
+      "Knowledge and experience of developing Human Resource Management Systems and its implementation.",
+      "Knowledge of Grievance Redressal Mechanism and its workflow.",
+      "Knowledge of national and local labour regulations and its applicability.",
+      "Demonstrable leadership skills, good communication skills including (English) writing skills and team player."
+    ],
+    preferred: [],
+    apply: "Submit your updated CVs to hr@esggp.org."
   }
 ];
+
+
 
 // Career Component
 const Career = () => {
