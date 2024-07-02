@@ -1,18 +1,16 @@
-import { useState, useEffect, useRef } from "react";
 
+
+
+import { useState, useEffect, useRef } from "react";
 import "animate.css";
 
 const HeroMain = () => {
   const [currentProgress, setCurrentProgress] = useState([0, 0, 0]);
-
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const [spinAnimation, setSpinAnimation] = useState(false);
-
   const [textAnimationClass, setTextAnimationClass] = useState(
     "animate__fadeInLeft"
   );
-
   const animationRef = useRef();
 
   const sectionTexts = [
@@ -21,13 +19,11 @@ const HeroMain = () => {
       details:
         "To the ever-changing environment and business needs, we position ourselves with our deep understanding of technical, cultural and regulatory know-how, meeting client needs.",
     },
-
     {
       title: "About EGP: Integrating ESG Excellence",
       details:
         "EGP is an association of world class professionals, who have come together from different geographies, to deliver best in class ESG services.",
     },
-
     {
       title: "Sustainatrix: ESG Intelligence Solution",
       details:
@@ -37,25 +33,18 @@ const HeroMain = () => {
 
   useEffect(() => {
     startProgressBarAnimation();
-
     return () => cancelAnimationFrame(animationRef.current);
   }, [currentIndex]);
 
   const startProgressBarAnimation = () => {
     let startTime = null;
-
     const animateProgressBar = (timestamp) => {
       if (!startTime) startTime = timestamp;
-
       const elapsed = timestamp - startTime;
-
       const progress = Math.min((elapsed / 10000) * 100, 100); // 10000ms = 10s
-
       setCurrentProgress((prevProgress) => {
         const newProgress = [0, 0, 0];
-
         newProgress[currentIndex] = progress;
-
         return newProgress;
       });
 
@@ -71,26 +60,19 @@ const HeroMain = () => {
 
   const handleAnimationEnd = () => {
     setTextAnimationClass("animate__rotateOutUpLeft");
-
     setSpinAnimation(true); // Start the spin animation
-
     setTimeout(() => {
       setSpinAnimation(false); // Disable the spin animation after 1s
-
       setCurrentProgress([0, 0, 0]); // Reset all progress bars
-
       setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
 
       // Set animation class based on the current index
-
       const nextIndex = (currentIndex + 1) % 3;
-
       if (nextIndex === 0) {
         setTextAnimationClass("animate__fadeInLeft");
       } else {
         setTextAnimationClass("animate__rotateInUpLeft");
       }
-
       startProgressBarAnimation();
     }, 1000);
   };
@@ -143,28 +125,26 @@ const HeroMain = () => {
           <div
             className={`text-left text-white animate__animated w-[65vw] mb-[120px] z-999 ${textAnimationClass}`}
           >
-            <p className="text-5xl leading-relaxed">
+            <p className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-relaxed">
               {sectionTexts[currentIndex].title}
             </p>
-
-            <p className="text-xl leading-normal mb-12">
+            <p className="text-base sm:text-xl md:text-xl lg:text-2xl xl:text-3xl leading-normal mb-12">
               {sectionTexts[currentIndex].details}
             </p>
-
             <div className="flex items-center leading-none">
               <div className="h-[2px] bg-[#00A7FF] w-12 mr-6"></div>
-
               <a
                 href={sectionTexts[currentIndex].link}
-                className="text-white hover:text-custom-blue transition-color cursor-pointer transition-duration-300"
+                className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white hover:text-custom-blue transition-color cursor-pointer transition-duration-300"
               >
                 LEARN MORE
               </a>
+
             </div>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full flex justify-around">
+        <div className="desktop-progress-bars absolute bottom-0 left-0 w-full flex justify-around">
           {["CORE VALUES", "WHO WE ARE", "ANNOUNCING ESG INTELLIGENCE"].map(
             (title, index) => (
               <div key={index} className="w-1/4 flex flex-col items-start">
@@ -188,6 +168,22 @@ const HeroMain = () => {
               </div>
             )
           )}
+        </div>
+
+        <div className="mobile-progress-bar hidden absolute bottom-0 left-0 w-full flex justify-center">
+          <div className="w-3/4 flex flex-col items-start">
+            <h3 className="text-xl mb-6" style={{ color: "white" }}>
+              {["CORE VALUES", "WHO WE ARE", "ANNOUNCING ESG INTELLIGENCE"][
+                currentIndex
+              ]}
+            </h3>
+            <div className="w-full bg-gray-300 h-1.5">
+              <div
+                className="bg-[#00A7FF] h-1.5"
+                style={{ width: `${currentProgress[currentIndex]}%` }}
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
 
