@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 
 // const images = [
 //   { src: 'sec1.jpg', title: 'Manufacturing', link: '/Manufacturing' },
@@ -14,12 +14,12 @@ export const Market_realestate = () => {
     {
       title: 'Hydropower in Nepal',
       description: 'EGP has undertaken development of Management Plan for a 50 MW hydropower project in Nepal. Our team has provided services related to development of EHS management plan and supported the Project Company with advice on managing risks related construction phase of the Project.',
-      image: 'sec1.jpg'
+      image: 'Dam.jpg'
     },
     {
       title: 'Solar Power Project in India',
       description: 'Members of our team was involved in developing an Environment and Social Impact Assessment (ESIA) for a 250 MW Solar Power Project in India. The project entailed assessing the risks and impacts of the project and developing appropriate mitigation measures as part of the Environment and Social Management Plan. Critical Habitat Assessment and Advisory was also carried out for the project.',
-      image: 'sec2.jpg'
+      image: 'solar.jpg'
     }
   ];
 
@@ -40,7 +40,7 @@ export const Market_realestate = () => {
       content: 'Risk management is an essential aspect of any project. Our services include identifying potential risks, assessing their impact, and developing strategies to mitigate them. We use a structured approach to risk management, which involves regular monitoring and reporting to ensure that risks are managed proactively. Our team has experience managing risks in various industries, allowing us to provide insights and solutions that are tailored to your specific needs. By partnering with us, you can minimize the impact of risks on your projects and increase the likelihood of achieving your objectives. Let us help you manage risk effectively.'
     }
   ];
-  
+
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -49,8 +49,8 @@ export const Market_realestate = () => {
 
 
   return (
-   
-      <div className='relative w-full'>
+
+    <div className='relative w-full'>
       <div className="w-full h-screen relative overflow-hidden">
         {/* Video Background */}
         <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
@@ -63,13 +63,13 @@ export const Market_realestate = () => {
 
         {/* Heading and Subheading */}
         <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">
-          <div className="container mx-auto flex flex-col justify-end h-full">  
+          <div className="container mx-auto flex flex-col justify-end h-full">
             <div className="mb-20">
               <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">Infrastructure & Real Estate</h1>
               <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
-               We have been providing services to Client in sectors of Infrastructure
-               & Real Estate, Manufacturing, Agri-Business & Forestry, Retail & Hospitality,
-              Financial Institution & Funds and Health & Education.
+                We have been providing services to Client in sectors of Infrastructure
+                & Real Estate, Manufacturing, Agri-Business & Forestry, Retail & Hospitality,
+                Financial Institution & Funds and Health & Education.
               </h2>
             </div>
           </div>
@@ -94,22 +94,22 @@ export const Market_realestate = () => {
         </div>
       </div>
 
-        {/* New Section: How we can help */}
+      {/* New Section: How we can help */}
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto">
           <h1 className="text-5xl sm:text-4xl font-medium-bold px-20 text-[#00b0f0] mb-12">How we can help?</h1>
           <div className="mb-12">
             <p className="text-lg sm:text-xl px-20 text-gray-700 mb-6">
               The Supply Chain Reinvention framework can help your organization effect a fundamental
-               change in its performance to support sales growth, become more cost-competitive, minimize
-                risk and improve operational resilience.
+              change in its performance to support sales growth, become more cost-competitive, minimize
+              risk and improve operational resilience.
             </p>
             <p className="text-lg sm:text-xl px-20 text-gray-700">
-              We have reinvented the supply chain with agile, profitable, technology-enabled structures 
+              We have reinvented the supply chain with agile, profitable, technology-enabled structures
               we call demand response networks (DRNs). DRNs alter the product-centric, sequential
-               plan-buy-make-sell-deliver-return view of supply chains to a demand-centric,
-                networked, create-sense-shape-respond one that uses complex supply chain 
-                analytics solutions to drive significant improvements.
+              plan-buy-make-sell-deliver-return view of supply chains to a demand-centric,
+              networked, create-sense-shape-respond one that uses complex supply chain
+              analytics solutions to drive significant improvements.
             </p>
           </div>
           {helpSections.map((help, index) => (

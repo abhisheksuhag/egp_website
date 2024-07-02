@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 
 // const images = [
 //   { src: 'sec1.jpg', title: 'Manufacturing', link: '/Manufacturing' },
@@ -14,18 +14,18 @@ export const Market_manufacturing = () => {
     {
       title: 'LAM Processing in India',
       description: 'Members of our team was involved in developing an Environment and Social Impact Assessment (ESIA) for a 250 MW Solar Power Project in India. The project entailed assessing the risks and impacts of the project and developing appropriate mitigation measures as part of the Environment and Social Management Plan. Critical Habitat Assessment and Advisory was also carried out for the project.',
-      image: 'sec1.jpg'
+      image: 'Lam.jpg'
     },
     {
       title: 'Textile Manufacturing in India',
       description: 'Members of our team was involved in developing an Environment and Social Impact Assessment (ESIA) for a 250 MW Solar Power Project in India. The project entailed assessing the risks and impacts of the project and developing appropriate mitigation measures as part of the Environment and Social Management Plan. Critical Habitat Assessment and Advisory was also carried out for the project.',
-      image: 'sec2.jpg'
+      image: 'Textile.jpg'
     },
     {
-        title: 'Paper & Pulp Manufacturing in India',
-        description: 'Members of our team was involved in developing an Environment and Social Impact Assessment (ESIA) for a 250 MW Solar Power Project in India. The project entailed assessing the risks and impacts of the project and developing appropriate mitigation measures as part of the Environment and Social Management Plan. Critical Habitat Assessment and Advisory was also carried out for the project.',
-        image: 'sec2.jpg'
-      }
+      title: 'Paper & Pulp Manufacturing in India',
+      description: 'Members of our team was involved in developing an Environment and Social Impact Assessment (ESIA) for a 250 MW Solar Power Project in India. The project entailed assessing the risks and impacts of the project and developing appropriate mitigation measures as part of the Environment and Social Management Plan. Critical Habitat Assessment and Advisory was also carried out for the project.',
+      image: 'Paper.jpg'
+    }
   ];
 
   const helpSections = [
@@ -45,7 +45,7 @@ export const Market_manufacturing = () => {
       content: 'Risk management is an essential aspect of any manufacturing project. Our services include identifying potential risks, assessing their impact, and developing strategies to mitigate them. We use a structured approach to risk management, which involves regular monitoring and reporting to ensure that risks are managed proactively. Our team has experience managing risks in various manufacturing sectors, allowing us to provide insights and solutions that are tailored to your specific needs. By partnering with us, you can minimize the impact of risks on your projects and increase the likelihood of achieving your objectives. Let us help you manage risk effectively in your manufacturing operations.'
     }
   ];
-  
+
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -54,8 +54,8 @@ export const Market_manufacturing = () => {
 
 
   return (
-    
-      <div className='relative w-full'>
+
+    <div className='relative w-full'>
       <div className="w-full h-screen relative overflow-hidden">
         {/* Video Background */}
         <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
@@ -99,21 +99,21 @@ export const Market_manufacturing = () => {
         </div>
       </div>
 
-        {/* New Section: How we can help */}
+      {/* New Section: How we can help */}
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto">
           <h1 className="text-5xl sm:text-4xl font-medium-bold px-20 text-[#00b0f0] mb-12">How we can help?</h1>
           <div className="mb-12">
             <p className="text-lg sm:text-xl px-20 text-gray-700 mb-6">
-            The Manufacturing Reinvention framework can help your organization effect a fundamental
-            change in its performance to support sales growth, become more cost-competitive, 
-            minimize risk and improve operational resilience.
+              The Manufacturing Reinvention framework can help your organization effect a fundamental
+              change in its performance to support sales growth, become more cost-competitive,
+              minimize risk and improve operational resilience.
             </p>
             <p className="text-lg sm:text-xl px-20 text-gray-700">
-            We have reinvented the manufacturing process with agile, profitable,
-            technology-enabled structures. Our advanced manufacturing systems alter
-            the traditional, sequential production model to a dynamic, integrated 
-            approach that utilizes real-time data and advanced analytics to drive significant improvements.
+              We have reinvented the manufacturing process with agile, profitable,
+              technology-enabled structures. Our advanced manufacturing systems alter
+              the traditional, sequential production model to a dynamic, integrated
+              approach that utilizes real-time data and advanced analytics to drive significant improvements.
             </p>
           </div>
           {helpSections.map((help, index) => (

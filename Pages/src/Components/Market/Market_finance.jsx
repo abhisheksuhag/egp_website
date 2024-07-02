@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 
 // const images = [
 //   { src: 'sec1.jpg', title: 'Manufacturing', link: '/Manufacturing' },
@@ -14,12 +14,12 @@ export const Market_finance = () => {
     {
       title: 'ESGMS Development for Credit Fund',
       description: 'EGP developed an ESG Management System (ESGMS) for a leading Asian Private Equity Firm’s Credit business line in India for their future investment in India. The Management System defines investment strategies and processes to manage ESG process associated with the debt investments into investee companies by the Fund. Workshops to train on ESGMS implementation was also carried out.',
-      image: 'sec1.jpg'
+      image: 'Credit_fund.jpg'
     },
     {
       title: 'ESMS Development for Insurance Company',
       description: 'Our team developed an ESMS for an Insurance Company in Indonesia. The ESMS developed will enable the Company and its Regional Offices to identify potential environmental and social risks by insuring in a wide range of portfolio products and to institute monitoring mechanisms to supervise the social and environmental performance of the portfolio insured during the term of the insurance agreement.',
-      image: 'sec2.jpg'
+      image: 'Insurance.jpg'
     }
   ];
 
@@ -40,7 +40,7 @@ export const Market_finance = () => {
       content: 'Risk management is an essential aspect of any financial project. Our services include identifying potential risks, assessing their impact, and developing strategies to mitigate them. We use a structured approach to risk management, which involves regular monitoring and reporting to ensure that risks are managed proactively. Our team has experience managing risks in various financial sectors, allowing us to provide insights and solutions that are tailored to your specific needs. By partnering with us, you can minimize the impact of risks on your projects and increase the likelihood of achieving your objectives. Let us help you manage risk effectively in your financial operations.'
     }
   ];
-  
+
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -49,7 +49,7 @@ export const Market_finance = () => {
 
 
   return (
-      <div className='relative w-full'>
+    <div className='relative w-full'>
       <div className="w-full h-screen relative overflow-hidden">
         {/* Video Background */}
         <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
@@ -61,14 +61,14 @@ export const Market_finance = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
         {/* Heading and Subheading */}
-      <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">
+        <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">
           <div className="container mx-auto flex flex-col justify-end h-full">
             <div className="mb-20">
               <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">Financial Institution And Funds</h1>
               <h2 className="w-full sm:w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
-              We have been providing services to Client in sectors of Infrastructure
-               & Real Estate, Manufacturing, Agri-Business & Forestry, Retail & Hospitality,
-              Financial Institution & Funds and Health & Education.
+                We have been providing services to Client in sectors of Infrastructure
+                & Real Estate, Manufacturing, Agri-Business & Forestry, Retail & Hospitality,
+                Financial Institution & Funds and Health & Education.
               </h2>
             </div>
           </div>
@@ -93,7 +93,7 @@ export const Market_finance = () => {
         </div>
       </div>
 
-        {/* New Section: How we can help */}
+      {/* New Section: How we can help */}
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto">
           <h1 className="text-5xl sm:text-4xl font-medium-bold px-20 text-[#00b0f0] mb-12">How we can help?</h1>
