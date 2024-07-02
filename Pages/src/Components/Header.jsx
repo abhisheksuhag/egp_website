@@ -179,13 +179,13 @@ const Header = () => {
                       </NavLink>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-700">
-                      <NavLink to="/">Agri-business & Forestry</NavLink>
+                      <NavLink to="/market-agri">Agri-business & Forestry</NavLink>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-700">
-                      <NavLink to="/">Retail & Hospitality</NavLink>
+                      <NavLink to="/market-Retail">Retail & Hospitality</NavLink>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-700">
-                      <NavLink to="/">Health & Education</NavLink>
+                      <NavLink to="/market-health">Health & Education</NavLink>
                     </li>
                   </ul>
                 </div>

@@ -4,6 +4,9 @@ import Services_mergers from './Components/Services/Services_mergers';
 import Market_realestate from './Components/Market/Market_realestate';
 
 import Market_manufacturing from './Components/Market/Market_manufacturing';
+import Market_Retail from './Components/Market/Market_Retail';
+import Market_health from './Components/Market/Market_health';
+import Market_agri from './Components/Market/Market_agri';
 import Market_finance from './Components/Market/Market_finance';
 import Services_risk from './Components/Services/Services_risk';
 import Services_social from './Components/Services/Services_social';
@@ -31,6 +34,12 @@ function App() {
         <Route path="/market-real-estate" element={<Market_realestate />} />
         <Route path="/market-manufacturing" element={<Market_manufacturing />} />
         <Route path="/market-finance" element={<Market_finance />} />
+        <Route path="/market-retail" element={<Market_Retail />} />
+        <Route path="/market-agri" element={<Market_agri />} />
+        <Route path="/market-health" element={<Market_health />} />
+
+
+
         <Route path="/services-risk" element={<Services_risk />} />
         <Route path="/careers" element={<Career />} />
         <Route path="/services-mergers" element={<Services_mergers />} />
