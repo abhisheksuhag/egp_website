@@ -1,13 +1,5 @@
 import { useState } from "react";
 
-// const images = [
-//   { src: 'sec1.jpg', title: 'Manufacturing', link: '/Manufacturing' },
-//   { src: 'sec2.jpg', title: 'Infra & Real Estate', link: '/Infra & Real Estate' },
-//   { src: 'sec3.jpg', title: 'Agri Business & Forestry', link: '/Agri Business & Forestry' },
-//   { src: 'sec4.jpg', title: 'Health & Education', link: '/Health & Education' },
-//   { src: 'sec5.jpg', title: 'Retail & Hospitality', link: '/Retail & Hospitality' },
-//   { src: 'sec6.jpg', title: 'Financial Institution & Funds', link: '/Financial Institution & Funds' }
-// ];
 
 export const Market_manufacturing = () => {
   const projects = [
@@ -139,25 +131,7 @@ export const Market_manufacturing = () => {
         </div>
       </div>
 
-      {/* Images Section */}
-      {/* <div className="bg-gray-100 py-16">
-        <div className="container mx-auto px-5">
-          <div className="flex flex-wrap -mx-3">
-            {images.map((image, index) => (
-              <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-3">
-                <div className="relative overflow-hidden bg-white shadow-lg rounded-lg">
-                  <img className="w-full h-64 object-cover" src={image.src} alt={image.title} />
-                  <div className="absolute inset-0 bg-black bg-opacity-40 hover:bg-opacity-10 flex items-end p-5">
-                    <a href={image.link} className="text-white text-3xl font-bold hover:text-gray-300">
-                      {image.title}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
+
     </div>
   );
 };

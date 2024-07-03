@@ -120,11 +120,10 @@ const HeroMain = () => {
           <div
             className={`text-left text-white animate__animated w-[65vw] mb-[120px] z-999 ${textAnimationClass} font-helvetica`}
           >
-            <p className="text-5xl leading-relaxed">
+            <p className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-relaxed">
               {sectionTexts[currentIndex].title}
             </p>
-
-            <p className="text-xl leading-normal mb-12">
+            <p className="text-base sm:text-xl md:text-xl lg:text-2xl xl:text-3xl leading-normal mb-12">
               {sectionTexts[currentIndex].details}
             </p>
 
