@@ -1,28 +1,25 @@
 import { useState } from 'react';
 
-
-
- const Services_mergers = () => {
+const Services_mergers = () => {
 
   const categories = [
     {
-        title: 'Environmental Site Assessment – ASTM',
-        description: 'We provide Environmental Site Assessment services according to ASTM standards to evaluate the environmental condition of properties.'
-      },
-      {
-        title: 'Merger and Acquisition Support',
-        description: 'We offer support for mergers and acquisitions by conducting thorough due diligence on assets and transactions to identify potential risks and liabilities.'
-      },
-      {
-        title: 'Asset/Transaction Due Diligence',
-        description: 'We conduct comprehensive due diligence on assets and transactions to identify potential risks and liabilities.'
-      },
-      {
-        title: 'Implementation Support',
-        description: 'Our team provides comprehensive support during the implementation phase of projects to ensure all environmental and social requirements are met.'
-      }
+      title: 'Environmental Site Assessment – ASTM',
+      description: 'We provide Environmental Site Assessment services according to ASTM standards to evaluate the environmental condition of properties.'
+    },
+    {
+      title: 'Merger and Acquisition Support',
+      description: 'We offer support for mergers and acquisitions by conducting thorough due diligence on assets and transactions to identify potential risks and liabilities.'
+    },
+    {
+      title: 'Asset/Transaction Due Diligence',
+      description: 'We conduct comprehensive due diligence on assets and transactions to identify potential risks and liabilities.'
+    },
+    {
+      title: 'Implementation Support',
+      description: 'Our team provides comprehensive support during the implementation phase of projects to ensure all environmental and social requirements are met.'
+    }
   ];
-  
 
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -31,7 +28,7 @@ import { useState } from 'react';
   };
 
   return (
-    <div className='relative w-full'>
+    <div className='relative w-full font-helvetica'>
       <div className="w-full h-screen relative overflow-hidden">
         {/* Video Background */}
         <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
@@ -48,18 +45,16 @@ import { useState } from 'react';
             <div className="mb-20">
               <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">MERGERS & ACQUISITIONS</h1>
               <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
-              EGP offers services to Clients in Mergers & Acquisitions (M&A) through all stages
-              of investment lifecycle. By providing experienced advisory services EGP supports 
-              the Client on target businesses which may be pertinent to making a well-informed M&A decision.
+                EGP offers services to Clients in Mergers & Acquisitions (M&A) through all stages
+                of investment lifecycle. By providing experienced advisory services EGP supports 
+                the Client on target businesses which may be pertinent to making a well-informed M&A decision.
               </h2>
             </div>
           </div>
         </div>
       </div>
       
-
-      
-       {/* New Section: Case Showcase */}
+      {/* New Section: Case Showcase */}
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto">
           <h1 className="text-5xl sm:text-4xl font-medium-bold text-center text-[#00b0f0] mb-12">Our Areas Of Expertise</h1>
@@ -70,9 +65,9 @@ import { useState } from 'react';
                   className="flex justify-between items-center cursor-pointer bg-transparent text-gray-700 border-b border-gray-300 py-2"
                   onClick={() => handleToggle(index)}
                 >
-                  <h2 className="text-lg sm:text-xl ">{category.title}</h2>
+                  <h2 className="text-lg sm:text-xl">{category.title}</h2>
                   <span className="text-lg sm:text-xl">
-                  {activeIndex === index ? '-' : '+'}
+                    {activeIndex === index ? '-' : '+'}
                   </span>
                 </div>
                 {activeIndex === index && (
@@ -85,16 +80,8 @@ import { useState } from 'react';
           </div>
         </div>
       </div>
-
-
-
-
-      
     </div>
   );
 };
 
 export default Services_mergers;
-
-
-

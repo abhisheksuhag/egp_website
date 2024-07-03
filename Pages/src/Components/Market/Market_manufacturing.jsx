@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "animate.css"; // Ensure to import animate.css for animations if required
 
 export const Market_manufacturing = () => {
   const projects = [
@@ -54,10 +54,8 @@ export const Market_manufacturing = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-
   return (
-
-    <div className='relative w-full'>
+    <div className="relative w-full font-helvetica">
       <div className="w-full h-screen relative overflow-hidden">
         {/* Video Background */}
         <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
@@ -86,7 +84,7 @@ export const Market_manufacturing = () => {
       {/* Content Below Video */}
       <div className="bg-white py-16">
         <div className="container mx-auto">
-          <h1 className="text-5xl sm:text-5xl font-medium-bold text-[#00b0f0] px-4 mb-12 ">Market Experience</h1>
+          <h1 className="text-5xl sm:text-5xl font-medium-bold text-[#00b0f0] px-4 mb-12">Market Experience</h1>
           {projects.map((project, index) => (
             <div key={index} className={`flex flex-col sm:flex-row ${index % 2 === 0 ? '' : 'sm:flex-row-reverse'} items-center mb-8`}>
               <div className="w-full sm:w-1/2 px-4">
@@ -140,8 +138,6 @@ export const Market_manufacturing = () => {
           ))}
         </div>
       </div>
-
-
     </div>
   );
 };

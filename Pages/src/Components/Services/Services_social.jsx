@@ -1,52 +1,50 @@
 import { useState } from 'react';
-
 import { FaPlus, FaMinus } from 'react-icons/fa';
 
- const Services_social = () => {
+const Services_social = () => {
 
-    const categories = [
-        {
-          title: 'Stakeholder Engagement',
-          description: 'We facilitate stakeholder engagement processes to ensure that all voices are heard and considered in project planning and execution.'
-        },
-        {
-          title: 'Social Impact Assessment',
-          description: 'Our team conducts thorough social impact assessments to evaluate the potential effects of projects on communities and propose mitigation strategies.'
-        },
-        {
-          title: 'Resettlement & Rehabilitation',
-          description: 'We provide comprehensive support for resettlement and rehabilitation processes to ensure that displaced communities are adequately compensated and supported.'
-        },
-        {
-          title: 'Socio-economic Baseline – Diagnostic Evaluation',
-          description: 'We perform socio-economic baseline studies and diagnostic evaluations to establish benchmarks and inform project planning and impact assessments.'
-        },
-        {
-          title: 'Community Development',
-          description: 'Our community development programs focus on enhancing the well-being and economic prospects of communities affected by projects.'
-        },
-        {
-          title: 'Cultural Heritage Management',
-          description: 'We offer cultural heritage management services to preserve and protect cultural sites and practices impacted by development projects.'
-        },
-        {
-          title: 'Indigenous People Management',
-          description: 'Our services include developing and implementing strategies to engage and support indigenous communities in project areas.'
-        },
-        {
-          title: 'Participatory Evaluation',
-          description: 'We use participatory evaluation methods to involve community members in assessing the impacts and outcomes of projects.'
-        },
-        {
-          title: 'Traditional Knowledge Preservation',
-          description: 'We work with communities to document and preserve traditional knowledge and practices that are at risk of being lost.'
-        },
-        {
-          title: 'Value Creation',
-          description: 'Our value creation services aim to maximize the positive impacts of projects, ensuring benefits for all stakeholders.'
-        }
-      ];
-      
+  const categories = [
+    {
+      title: 'Stakeholder Engagement',
+      description: 'We facilitate stakeholder engagement processes to ensure that all voices are heard and considered in project planning and execution.'
+    },
+    {
+      title: 'Social Impact Assessment',
+      description: 'Our team conducts thorough social impact assessments to evaluate the potential effects of projects on communities and propose mitigation strategies.'
+    },
+    {
+      title: 'Resettlement & Rehabilitation',
+      description: 'We provide comprehensive support for resettlement and rehabilitation processes to ensure that displaced communities are adequately compensated and supported.'
+    },
+    {
+      title: 'Socio-economic Baseline – Diagnostic Evaluation',
+      description: 'We perform socio-economic baseline studies and diagnostic evaluations to establish benchmarks and inform project planning and impact assessments.'
+    },
+    {
+      title: 'Community Development',
+      description: 'Our community development programs focus on enhancing the well-being and economic prospects of communities affected by projects.'
+    },
+    {
+      title: 'Cultural Heritage Management',
+      description: 'We offer cultural heritage management services to preserve and protect cultural sites and practices impacted by development projects.'
+    },
+    {
+      title: 'Indigenous People Management',
+      description: 'Our services include developing and implementing strategies to engage and support indigenous communities in project areas.'
+    },
+    {
+      title: 'Participatory Evaluation',
+      description: 'We use participatory evaluation methods to involve community members in assessing the impacts and outcomes of projects.'
+    },
+    {
+      title: 'Traditional Knowledge Preservation',
+      description: 'We work with communities to document and preserve traditional knowledge and practices that are at risk of being lost.'
+    },
+    {
+      title: 'Value Creation',
+      description: 'Our value creation services aim to maximize the positive impacts of projects, ensuring benefits for all stakeholders.'
+    }
+  ];
 
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -55,8 +53,7 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
   };
 
   return (
-    
-      <div className='relative w-full'>
+    <div className='relative w-full font-helvetica'>
       <div className="w-full h-screen relative overflow-hidden">
         {/* Video Background */}
         <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
@@ -82,14 +79,9 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
           </div>
         </div>
       </div>
-
-
-
-
-      
       
       {/* New Section: Case Showcase */}
-      <div className=" bg-gray-100  py-16">
+      <div className="bg-gray-100 py-16">
         <div className="container mx-auto">
           <h1 className="text-5xl sm:text-4xl font-medium-bold text-center text-[#00b0f0] mb-12">Our Areas Of Expertise</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
@@ -102,7 +94,7 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
                 >
                   <h2 className="text-lg sm:text-lg flex-1">{category.title}</h2>
                   <span className="text-lg sm:text-xl flex-shrink-0 ml-4">
-                    {activeIndex === index ? '-' : '+'}
+                    {activeIndex === index ? <FaMinus /> : <FaPlus />}
                   </span>
                 </div>
                 {activeIndex === index && (
@@ -115,16 +107,8 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
           </div>
         </div>
       </div>
-
-
-
-
-      
     </div>
   );
 };
 
 export default Services_social;
-
-
-

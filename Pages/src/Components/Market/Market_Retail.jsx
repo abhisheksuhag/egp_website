@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-
+import "animate.css"; // Ensure to import animate.css for animations if required
 
 export const Retail_realestate = () => {
     const projects = [
@@ -40,10 +39,8 @@ export const Retail_realestate = () => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
-
     return (
-
-        <div className='relative w-full'>
+        <div className="relative w-full font-helvetica">
             <div className="w-full h-screen relative overflow-hidden">
                 {/* Video Background */}
                 <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
@@ -59,7 +56,7 @@ export const Retail_realestate = () => {
                     <div className="container mx-auto flex flex-col justify-end h-full">
                         <div className="mb-20">
                             <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">Retail & Hospitality</h1>
-                            <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
+                            <h2 className="w-full sm:w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
                                 We have been providing services to Client in sectors of Infrastructure
                                 & Real Estate, Manufacturing, Agri-Business & Forestry, Retail & Hospitality,
                                 Financial Institution & Funds and Health & Education.
@@ -72,7 +69,7 @@ export const Retail_realestate = () => {
             {/* Content Below Video */}
             <div className="bg-white py-16">
                 <div className="container mx-auto">
-                    <h1 className="text-5xl sm:text-5xl font-medium-bold text-[#00b0f0] px-4 mb-12 ">Market Experience</h1>
+                    <h1 className="text-5xl sm:text-5xl font-medium-bold text-[#00b0f0] px-4 mb-12">Market Experience</h1>
                     {projects.map((project, index) => (
                         <div key={index} className={`flex flex-col sm:flex-row ${index % 2 === 0 ? '' : 'sm:flex-row-reverse'} items-center mb-8`}>
                             <div className="w-full sm:w-1/2 px-4">
@@ -127,8 +124,6 @@ export const Retail_realestate = () => {
                     ))}
                 </div>
             </div>
-
-
         </div>
     );
 };
