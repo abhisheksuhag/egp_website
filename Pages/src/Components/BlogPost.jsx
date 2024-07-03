@@ -1,6 +1,8 @@
+import React from 'react';
+
 const BlogPost = () => {
     return (
-        <div className="flex justify-center items-center h-screen bg-white">
+        <div className="flex justify-center items-center h-screen bg-white font-helvetica">
             <div className="relative flex">
                 {/* Text Background Container */}
                 <div
@@ -9,14 +11,14 @@ const BlogPost = () => {
                 >
                     {/* Text Container */}
                     <div className="text-container p-[65px] flex flex-col justify-center items-center text-balance w-full relative z-10">
-                        <div className="left-0 right-0  mr-20 h-full w-11/12  ">
+                        <div className="left-0 right-0 mr-20 h-full w-11/12">
                             <div className="text-sm text-gray-500 mt-24 mb-10">
                                 <h2>Resource management and circular economy</h2>
                             </div>
                             <div className="text-3xl font-bold mt-8 mb-10">
                                 Garbage in – energy out: what you need to know when developing waste-to-energy projects
                             </div>
-                            <div className="mt-4 text-gray-700 text-s" >
+                            <div className="mt-4 text-gray-700 text-s">
                                 <p>
                                     Rapid urbanisation in Southeast Asia means increased waste that needs to be managed.
                                     Rapid urbanisation in Southeast Asia means increased waste that needs to be managed.
@@ -36,10 +38,7 @@ const BlogPost = () => {
                 </div>
 
                 {/* Image Container */}
-                <div
-                    className="image-container w-500px h-[62vh] bg-gray-100 z-20"
-
-                >
+                <div className="image-container w-[500px] h-[62vh] bg-gray-100 z-20">
                     <img
                         src="sec1.jpg"
                         alt="Building"

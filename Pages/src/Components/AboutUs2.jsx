@@ -60,7 +60,7 @@ const AboutUs2 = () => {
   }, []);
 
   return (
-    <div className="h-screen relative flex flex-col lg:flex-row">
+    <div className="h-screen relative flex flex-col lg:flex-row font-helvetica">
       {/* Main Heading shifted to the left */}
       
 

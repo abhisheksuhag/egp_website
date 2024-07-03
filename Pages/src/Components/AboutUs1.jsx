@@ -44,7 +44,7 @@ const AboutUs1 = () => {
   }, []);
 
   return (
-    <div>
+    <div className="font-helvetica">
       <div className="w-full h-screen relative">
         {/* Video Background */}
         <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
