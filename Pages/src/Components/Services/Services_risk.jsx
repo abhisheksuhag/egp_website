@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-
-
 export const Services_risk = () => {
 
   const categories = [
@@ -82,7 +80,6 @@ export const Services_risk = () => {
       description: 'We develop and track ESG metrics to measure the environmental, social, and governance performance of projects.'
     }
   ];
-  
 
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -91,7 +88,7 @@ export const Services_risk = () => {
   };
 
   return (
-    <div className='relative w-full'>
+    <div className='relative w-full font-helvetica'>
       <div className="w-full h-screen relative overflow-hidden">
         {/* Video Background */}
         <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
@@ -108,19 +105,17 @@ export const Services_risk = () => {
             <div className="mb-20">
               <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">ESG RISK ADVISORY</h1>
               <h2 className="w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
-              The risks and impacts emanating from environment, social and governance (ESG) factors 
-              and their management entails a business’s commitment to improve their ESG risk management. 
-              EGP provides advisory services to businesses in identifying ESG risks and management 
-              measures to enhance their ESG performance.
+                The risks and impacts emanating from environment, social and governance (ESG) factors 
+                and their management entails a business’s commitment to improve their ESG risk management. 
+                EGP provides advisory services to businesses in identifying ESG risks and management 
+                measures to enhance their ESG performance.
               </h2>
             </div>
           </div>
         </div>
       </div>
-
-
       
-       {/* New Section: Case Showcase */}
+      {/* New Section: Case Showcase */}
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto">
           <h1 className="text-5xl sm:text-4xl font-medium-bold text-center text-[#00b0f0] mb-12">Our Areas Of Expertise</h1>
@@ -131,7 +126,7 @@ export const Services_risk = () => {
                   className="flex justify-between items-center cursor-pointer bg-transparent text-gray-700 border-b border-gray-300 py-2"
                   onClick={() => handleToggle(index)}
                 >
-                  <h2 className="text-lg sm:text-xl ">{category.title}</h2>
+                  <h2 className="text-lg sm:text-xl">{category.title}</h2>
                   <span className="text-lg sm:text-xl">
                     {activeIndex === index ? '-' : '+'}
                   </span>
@@ -146,16 +141,8 @@ export const Services_risk = () => {
           </div>
         </div>
       </div>
-
-
-
-
-      
     </div>
   );
 };
 
 export default Services_risk;
-
-
-

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "animate.css"; // Ensure to import animate.css for animations if required
 
 const Services_ehs = () => {
 
@@ -48,7 +49,7 @@ const Services_ehs = () => {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full font-helvetica">
       {/* Video Background */}
       <div className="relative w-full h-screen overflow-hidden">
         <video className="w-full h-full object-cover" autoPlay loop muted>
@@ -99,8 +100,6 @@ const Services_ehs = () => {
           </div>
         </div>
       </div>
-
-      
     </div>
   );
 };
