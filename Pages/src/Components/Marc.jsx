@@ -154,8 +154,6 @@
 // };
 
 // export default Marc;
-
-
 import { useRef, useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
@@ -256,7 +254,7 @@ const Marc = () => {
     }, []);
 
     return (
-        <div className="h-screen relative flex flex-col lg:flex-row">
+        <div className="h-screen relative flex flex-col lg:flex-row font-helvetica">
             {/* Main Heading */}
             <h1 className="text-4xl font-bold text-gray-800 p-4 lg:absolute lg:top-10 lg:left-3 lg:ml-10 z-20">
                 Market

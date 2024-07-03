@@ -123,7 +123,7 @@ const HeroMain = () => {
             <p className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-relaxed">
               {sectionTexts[currentIndex].title}
             </p>
-            <p className="text-base sm:text-xl md:text-xl lg:text-2xl xl:text-3xl leading-normal mb-12">
+            <p className="text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl leading-normal mb-12">
               {sectionTexts[currentIndex].details}
             </p>
 

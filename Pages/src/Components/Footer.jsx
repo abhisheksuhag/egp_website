@@ -1,6 +1,5 @@
-
 import { NavLink } from "react-router-dom";
-import {  FaLinkedin, FaEnvelope, } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -27,7 +26,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-black text-gray-400 p-6 md:p-10 inset-x-0 bottom-0">
+    <footer className="bg-black text-gray-400 p-6 md:p-10 inset-x-0 bottom-0 font-helvetica">
       <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-start">
         {/* Sustainatrix Section */}
         <div className="w-full md:w-auto flex flex-col items-start md:items-start mb-6 md:mb-0">
@@ -54,9 +53,8 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition duration-300 ease-in-out"
             >
-              <FaXTwitter  size={24} />
+              <FaXTwitter size={24} />
             </a>
-            
             <a
               href="https://linkedin.com"
               target="_blank"
@@ -120,8 +118,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center bg-black text-gray-300 text-xs mt-6 md:mt-10">
-      Copyright © 2024 | Powered by ESG Global Partners Private Limited
+      <div className="text-center bg-black text-gray-300 text-xs mt-6 md:mt-10 font-helvetica">
+        Copyright © 2024 | Powered by ESG Global Partners Private Limited
         <br />
         Esggp.org
       </div>
