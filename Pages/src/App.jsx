@@ -21,14 +21,17 @@ import Cta from './Components/Cta';
 import Footer from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
 import Chatbot from "./Components/Chatbot";
+import GoToTop from "./Components/GoToTop";
 
 
 function App() {
   return (
     <>
       <Header />
+      <GoToTop />
       <Chatbot />
       <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/market-real-estate" element={<Market_realestate />} />

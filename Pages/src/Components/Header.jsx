@@ -101,6 +101,18 @@ const Header = () => {
         </div>
         <nav className="hidden md:flex">
           <ul className="flex items-center space-x-8">
+
+            <li className="relative group hover:scale-105"
+              onMouseEnter={handleMouseEnterOtherItems}>
+              <NavLink
+                to="/"
+                className="text-white font-semibold text-md  py-2 hover:text-[#00B0F0]"
+              >
+                Home
+                <span className="absolute left-0 bottom-[-8px] block h-0.5 w-0 bg-[#00B0F0] transition-all duration-500 group-hover:w-full"></span>
+              </NavLink>
+            </li>
+
             <li className="relative group hover:scale-105"
               onMouseEnter={handleMouseEnterOtherItems}>
               <NavLink

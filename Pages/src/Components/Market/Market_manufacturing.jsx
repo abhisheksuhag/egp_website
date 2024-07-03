@@ -17,7 +17,17 @@ export const Market_manufacturing = () => {
       title: 'Paper & Pulp Manufacturing in India',
       description: 'Members of our team was involved in developing an Environment and Social Impact Assessment (ESIA) for a 250 MW Solar Power Project in India. The project entailed assessing the risks and impacts of the project and developing appropriate mitigation measures as part of the Environment and Social Management Plan. Critical Habitat Assessment and Advisory was also carried out for the project.',
       image: 'Paper.jpg'
-    }
+    },
+    {
+      title: 'Pharma Manufacturing in India',
+      description: 'EGP conducted ESG due diligence for a finished formulation manufacturer in Chennai, tamil Nadu. The assessment covered environmental, social, and governance risks, leading to the development of a comprehensive Environment and Social Action Plan with recommendations to mitigate risks and enhance ESG performance.',
+      image: 'Paper.jpg'
+    },
+    {
+      title: 'Iron & Steel Manufacturing in India',
+      description: 'EGP undertook ESG due diligence for a 3.6 Metric TPA Iron & Steel manufacturing unit in Raipur, Chhattisgarh. The assessment included regulatory, ESG, health and safety, and operational risks. An Environment and Social Action Plan was developed, offering recommendations to mitigate these risks and enhance ESG performance.',
+      image: 'Paper.jpg'
+    },
   ];
 
   const helpSections = [
