@@ -12,7 +12,7 @@ const GoToTop = () => {
     return (
         <button
             onClick={handleScrollToTop}
-            className="fixed  bottom-10 left-10  z-20"
+            className="fixed  bottom-20 right-8  z-20"
             style={{ marginLeft: '-5px', marginBottom: '-5px' }}
         >
             <FaArrowUp className='text-[#00b0f0] text-2xl ' />
