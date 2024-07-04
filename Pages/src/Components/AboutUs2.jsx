@@ -33,7 +33,7 @@ const AboutUs2 = () => {
       alt: "Building 2",
     },
     {
-      src: "sec3.jpg",
+      src: "pexels-product-school-2678468.jpg",
       alt: "Building 3",
     },
   ];
@@ -91,7 +91,7 @@ const AboutUs2 = () => {
               <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
             </div>
           ))}
-        </div>
+        </div> 
       </div>
 
       {/* Navigation Buttons */}
