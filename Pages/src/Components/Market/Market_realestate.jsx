@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "animate.css"; // Ensure to import animate.css for animations if required
+import "animate.css"; 
 
 export const Market_realestate = () => {
   const projects = [
@@ -55,6 +55,7 @@ export const Market_realestate = () => {
         <div className="absolute bottom-0 left-0 w-full text-white px-5 py-10">
           <div className="container mx-auto flex flex-col justify-end h-full">
             <div className="mb-20">
+              <div className="m-10"></div>
               <h1 className="text-3xl sm:text-6xl md:text-6xl font-medium-bold mb-6">Infra & Real Estate</h1>
               <h2 className="w-full sm:w-[800px] text-lg sm:text-xl md:text-xl md:text-medium-bold">
                 We have been providing services to Client in sectors of Infrastructure
